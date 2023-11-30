@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Szisza Pizza</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="pizza-rendeles.html">Pizza rendelés</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="orarend.html">Órarend</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kartyajatek.html">Kártyajáték</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+      <form class="container">
+        <div>
+            <label for="rendeloneve" class="from-label">Megrendelő neve</label>
+            <input type="text" class="form-control" id="rendeloneve" placeholder="Pl.: Varga Béla">
+        </div>
+        <div>
+            <label for="szam" class="from-label">Megrendelő Telefonszáma</label>
+            <input type="tel" class="form-control" id="szam" placeholder="+36 30 123 4567">
+        </div>
+        <div>
+            <label for="cim" class="from-label">Megrendelő címe</label>
+            <input type="text" class="form-control" id="cim" placeholder="Pl.: 1081 Blaha lujza ">
+        </div>
+        <h5>Pizza vastagsága</h5>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              vékony
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+              vastag
+            </label>
+          </div>
+          <h5>Pizza alapja:</h5>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">paradicsomos</option>
+            <option value="2">Tejfölös</option>
+          </select>
+          <h5>Pizza feltételek:</h5>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              sonka
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              gomba
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              kukorica
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              bacon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+             sok sajt
+            </label>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Comments</label>
+          </div>
+          <button class="btn btn-success">Megrendelem</button>
+          <button class="reset btn btn-info">Alaphelyzetbe</button>
+      </form>
+</body>
+</html>

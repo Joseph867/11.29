@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Petrikes Órarend</title>
+    <style>
+        th {
+            text-align: center;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        .even {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-4">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Hétfő</th>
+                <th>Kedd</th>
+                <th>Szerda</th>
+                <th>Csütörtök</th>
+                <th>Péntek</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="even">
+                <td>1. óra</td>
+                <td rowspan="2">Matematika</td>
+                <td>Angol</td>
+                <td rowspan="2">Fizika</td>
+                <td>Biológia</td>
+                <td>Magyar</td>
+            </tr>
+            <tr class="even">
+                <td>2. óra</td>
+                <td>Angol</td>
+                <td>Biológia</td>
+                <td>Magyar</td>
+            </tr>
+            <tr>
+                <td>3. óra</td>
+                <td>Testnevelés</td>
+                <td>Ének</td>
+                <td>Történelem</td>
+                <td>Testnevelés</td>
+                <td>Matematika</td>
+            </tr>
+            <!-- További sorok hozzáadása -->
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
